@@ -1,0 +1,23 @@
+
+<h1>Index</h1>
+
+<div class="project">
+	<% @project.each do |project| %>
+		<%= project.title %>
+		<%= project.body %>
+	<% end %>
+</div>
+
+<div class="task">
+	<% @task.each do |task| %>
+		<%= task.name %>
+		<%= task.quantity %>
+	<% end %>
+</div>
+
+<div class="item">
+	<% @item.each do |item| %>
+		<%= item.detail %>
+		<%= item.people %>
+	<% end %>
+</div>
